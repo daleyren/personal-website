@@ -3,3 +3,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .highlight {
+    @apply bg-stone-200 text-stone-800;
+  }
+  .focus {
+    @apply text-white underline
+  }
+}
