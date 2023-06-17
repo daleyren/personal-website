@@ -12,8 +12,8 @@ import NavHeader from "../components/NavHeader.vue";
       <PageContent>
         <template #content>
           <div class="text-white text-lg mt-6 ml-6 font-rubik">
-            I'm a builder and student @ UChicago studying Computer Science +
-            Physics: trying to explore and learn as much as possible before I
+            I'm a builder and student @ UChicago studying CS +
+            physics: trying to explore and learn as much as possible before I
             get pulled into the abyss of software.<br />
             <br />
             Currently, I'm a SWE intern at Shedd Capital working fullstack and a
