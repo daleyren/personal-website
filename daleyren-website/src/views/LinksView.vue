@@ -29,9 +29,9 @@ const links = [
 </script>
 
 <template>
-  <div class="mr-[10rem]">
-    <NavHeader header="links" />
-    <div class="w-[32rem] mt-5">
+  <div class="md:mr-[10rem]">
+    <NavHeader class="md:visible collapse" header="links" />
+    <div class="md:w-[32rem] md:mt-5 w-[80vw] mx-auto">
       <PageHeader header="Also Me" />
       <LinksList :content="links" />
     </div>

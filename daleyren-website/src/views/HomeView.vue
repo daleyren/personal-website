@@ -5,23 +5,25 @@ import NavHeader from "../components/NavHeader.vue";
 </script>
 
 <template>
-  <div class="mr-[10rem]">
+  <div class="md:mr-[10rem]">
     <!-- <NavHeader header="/ about" /> -->
-    <div class="w-[32rem] mt-5">
+    <div class="md:w-[32rem] mt-5 w-[80vw] mx-auto">
       <PageHeader header="Hi there! &#128075" />
       <PageContent>
         <template #content>
-          <div class="text-white text-lg mt-6 ml-6 font-rubik">
-            I'm a builder and student @ UChicago studying CS +
-            physics: trying to explore and learn as much as possible before I
-            get pulled into the abyss of software.<br />
-            <br />
-            Currently, I'm a SWE intern at Shedd Capital working fullstack and a
-            student venture scout for Soma Capital.<br />
-            <br />
-            Previously, I was a small business consultant intern at the Polsky
-            Center, frontend software engineer intern at Haylon Technologies, 
-            research intern dabbling in cavity quantum electrodynamics.
+          <div>
+            <div class="text-white sm:text-lg mt-6 md:ml-6 font-rubik text-base">
+              I'm a builder and student @ UChicago studying CS +
+              physics: trying to explore and learn as much as possible before I
+              get pulled into the abyss of software.<br />
+              <br />
+              Currently, I'm a SWE intern at Shedd Capital working fullstack and a
+              student venture scout for Soma Capital.<br />
+              <br />
+              Previously, I was a small business consultant intern at the Polsky
+              Center, frontend software engineer intern at Haylon Technologies, and
+              research intern dabbling in cavity quantum electrodynamics.
+            </div>
           </div>
         </template>
       </PageContent>

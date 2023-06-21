@@ -15,9 +15,9 @@ import NavHeader from "../components/NavHeader.vue";
 </script>
 
 <template>
-  <div class="mr-[10rem]">
-    <NavHeader header="writing" />
-    <div class="w-[32rem] mt-5">
+  <div class="md:mr-[10rem]">
+    <NavHeader class="md:visible collapse" header="writing" />
+    <div class="md:w-[32rem] md:mt-5 w-[80vw] mx-auto">
       <PageHeader header="Writing" />
       <PageContent content="[work in progress]" />
     </div>

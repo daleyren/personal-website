@@ -6,8 +6,8 @@ import { RouterView } from "vue-router";
 
 <template>
   <div class="h-screen w-screen bg-zinc-900 overflow-hidden fixed">
-    <div class="flex w-min mx-auto mt-20">
-      <NavBar class="mr-20" />
+    <div class="flex md:flex-row flex-col w-min mx-auto md:mt-20 mt-10">
+      <NavBar class="md:mr-20" />
       <router-view v-slot="{ Component }">
         <component :is="Component" />
       </router-view>
