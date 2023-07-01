@@ -1,2 +1,2 @@
 # personal-website
-ig i should lol
+just practice: made from scratch (vue)
