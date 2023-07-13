@@ -1,7 +1,24 @@
 <script setup>
-import { ref, watch, onMounted } from "vue";
+import { ref, watch, onMounted} from "vue";
 import { useRoute } from "vue-router";
 const currPage = ref("about");
+const route = ref(useRoute());
+
+watch(
+  () => route,
+  () => {
+    console.log(route.value.name)
+    if (route.value.name == "" || route.value.name == "home") {
+      currPage.value = "about";
+    }
+    else {
+      currPage.value = route.value.name
+    }
+  },
+  { deep: true }
+);
+
+
 </script>
 
 <template>
@@ -17,20 +34,20 @@ const currPage = ref("about");
         v-if="currPage != 'about'"
         class="hover:text-white w-min md:ml-auto mr-4 md:mr-0"
       >
-        <router-link to="/" @click="currPage = 'about'"> about </router-link>
+        <router-link to="/"> about </router-link>
       </h3>
       <h3
         v-if="currPage == 'about'"
         class="focus w-min md:ml-auto mr-4 md:mr-0"
       >
-        <router-link to="/" @click="currPage = 'about'"> about </router-link>
+        <router-link to="/"> about </router-link>
       </h3>
       <!-- DIVIDER -->
       <h3
         v-if="currPage != 'reading'"
         class="hover:text-white w-min md:ml-auto mr-4 md:mr-0"
       >
-        <router-link to="/reading" @click="currPage = 'reading'">
+        <router-link to="/reading">
           reading
         </router-link>
       </h3>
@@ -38,7 +55,7 @@ const currPage = ref("about");
         v-if="currPage == 'reading'"
         class="focus w-min md:ml-auto mr-4 md:mr-0"
       >
-        <router-link to="/reading" @click="currPage = 'reading'">
+        <router-link to="/reading">
           reading
         </router-link>
       </h3>
@@ -47,7 +64,7 @@ const currPage = ref("about");
         v-if="currPage != 'writing'"
         class="hover:text-white w-min md:ml-auto mr-4 md:mr-0"
       >
-        <router-link to="/writing" @click="currPage = 'writing'">
+        <router-link to="/writing">
           writing
         </router-link>
       </h3>
@@ -55,18 +72,18 @@ const currPage = ref("about");
         v-if="currPage == 'writing'"
         class="focus w-min md:ml-auto mr-4 md:mr-0"
       >
-        <router-link to="/writing" @click="currPage = 'writing'">
+        <router-link to="/writing">
           writing
         </router-link>
       </h3>
       <!-- DIVIER -->
       <h3 v-if="currPage != 'links'" class="hover:text-white w-min md:ml-auto">
-        <router-link to="/links" @click="currPage = 'links'">
+        <router-link to="/links">
           links
         </router-link>
       </h3>
       <h3 v-if="currPage == 'links'" class="focus w-min md:ml-auto">
-        <router-link to="/links" @click="currPage = 'links'">
+        <router-link to="/links">
           links
         </router-link>
       </h3>
