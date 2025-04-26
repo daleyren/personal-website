@@ -44,7 +44,7 @@ export default function Home() {
 
       {/* Links */}
       <div className="flex flex-col w-screen h-screen items-center justify-center snap-start flex-shrink-0">
-        <h1 className="text-3xl text-wrap w-1/3 text-left">
+        <h1 className="text-m lg:text-3xl md:text-2xl text-wrap lg:w-1/3 w-3/4 text-left">
           Hi! I&apos;m 
           &nbsp;
           <a className="text-red-700">Dale Ren</a>
@@ -88,9 +88,11 @@ export default function Home() {
             goodreads.
           </a>
         </h1>
-        <h1 className="text-xl text-wrap w-1/3 text-left bg-white-500 mt-20">
-          daleyren@uchicago.edu
-        </h1>
+        <div className="flex flex-col lg:w-1/3 w-3/4 ">
+          <h1 className="text-s lg:text-xl text-wrap text-left mt-20">
+            daleyren@uchicago.edu
+          </h1>
+        </div>
       </div>
     </div>
   );
