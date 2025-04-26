@@ -44,14 +44,13 @@ export default function Home() {
 
       {/* Links */}
       <div className="flex flex-col w-screen h-screen items-center justify-center snap-start flex-shrink-0">
-        <h1 className="text-m lg:text-3xl md:text-2xl text-wrap lg:w-1/3 w-3/4 text-left">
+        <h1 className="text-m lg:text-3xl md:text-2xl text-wrap lg:w-1/2 w-3/4 text-left">
           Hi! I&apos;m 
           &nbsp;
           <a className="text-red-700">Dale Ren</a>
           &nbsp;
           - a student at UChicago studying CS + Statistics. I&apos;m interested in all things ML/AI, finance, and sports. You
-          can find my past experience on
-          &nbsp;
+          can find my past experience on&nbsp;
           <a
             href="https://www.linkedin.com/in/daleren/"
             className="text-blue-400 hover:font-bold"
@@ -59,8 +58,7 @@ export default function Home() {
           >
             linkedin
           </a>
-          , my past projects on
-          &nbsp;
+          , my past projects on&nbsp;
           <a
             href="https://github.com/daleyren"
             className="text-gray-500 hover:font-bold"
@@ -68,8 +66,7 @@ export default function Home() {
           >
             github
           </a>
-          , my shitposts on
-          &nbsp;
+          , my shitposts on&nbsp;
           <a
             href="https://x.com/DaleRen2"
             className="text-neutral-950 hover:font-bold"
@@ -77,7 +74,6 @@ export default function Home() {
           >
             X
           </a>
-          &nbsp;
           , and random books I&apos;ve read on&nbsp;
           <a
             href="https://www.goodreads.com/user/show/139093493-dale-ren"
@@ -87,9 +83,15 @@ export default function Home() {
             goodreads.
           </a>
         </h1>
-        <div className="flex flex-col lg:w-1/3 w-3/4 ">
+        <div className="flex flex-col lg:w-1/2 w-3/4 ">
           <h1 className="text-s lg:text-xl text-wrap text-left mt-20">
-            daleyren@uchicago.edu
+            <a
+              href="mailto:daleyren@uchicago.edu"
+              className="underline"
+              target="_blank"
+            >
+              daleyren@uchicago.edu
+            </a>
           </h1>
         </div>
       </div>
