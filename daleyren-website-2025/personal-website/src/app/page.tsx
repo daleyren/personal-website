@@ -78,8 +78,7 @@ export default function Home() {
             X
           </a>
           &nbsp;
-          , and random books I&apos;ve read on
-          &nbsp;
+          , and random books I&apos;ve read on&nbsp;
           <a
             href="https://www.goodreads.com/user/show/139093493-dale-ren"
             className="text-lime-500 hover:font-bold"
