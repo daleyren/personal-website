@@ -88,6 +88,9 @@ export default function Home() {
             goodreads.
           </a>
         </h1>
+        <h1 className="text-xl text-wrap w-1/3 text-left bg-white-500 mt-20">
+          daleyren@uchicago.edu
+        </h1>
       </div>
     </div>
   );
