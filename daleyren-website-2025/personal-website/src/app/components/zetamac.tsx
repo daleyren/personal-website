@@ -1,7 +1,6 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 
-/* ---------- helpers ---------- */
 type Op = "+" | "-" | "×" | "÷";
 
 const randInt = (min: number, max: number) =>
@@ -34,7 +33,6 @@ const solve = ({ l, r, op }: { l: number; r: number; op: Op }) => {
   }
 };
 
-/* ---------- component ---------- */
 export default function ZetamacMini() {
   const ROUND = 60; // seconds
   const [prob, setProb] = useState(newProblem());
@@ -43,14 +41,12 @@ export default function ZetamacMini() {
   const [time, setTime] = useState(ROUND);
   const inputRef = useRef<HTMLInputElement>(null);
 
-  /* timer ----------------------- */
   useEffect(() => {
     if (time <= 0) return;
     const t = setInterval(() => setTime((s) => s - 1), 1000);
     return () => clearInterval(t);
   }, [time]);
 
-  /* auto-check answer ----------- */
   useEffect(() => {
     if (time <= 0) return; // stop when round finished
     const user = parseFloat(input);
@@ -64,7 +60,6 @@ export default function ZetamacMini() {
     }
   }, [input, prob, time]);
 
-  /* reset round ----------------- */
   const playAgain = () => {
     setScore(0);
     setTime(ROUND);
@@ -73,10 +68,9 @@ export default function ZetamacMini() {
     inputRef.current?.focus();
   };
 
-  /* ui -------------------------- */
   return (
     <div className="bg-gray-100 text-black rounded-lg shadow-lg p-6 w-80 mx-auto text-center">
-      <h2 className="text-xl font-bold mb-4">Mini Zetamac</h2>
+      <h2 className="text-2xl font-bold mb-4 mt-2">Mini Zetamac</h2>
 
       {time > 0 ? (
         <>
