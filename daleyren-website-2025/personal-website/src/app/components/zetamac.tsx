@@ -12,7 +12,7 @@ const makeProb = (): Prob => {
   const ops: Op[] = ["+", "-", "×", "÷"];
   const op = ops[Math.floor(Math.random() * ops.length)];
   let l = rand(2, 12);
-  let r = rand(2, 12);
+  const r = rand(2, 12);
   if (op === "÷") l = l * r;          // keep division integer
   return { l, r, op };
 };
