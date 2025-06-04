@@ -98,7 +98,7 @@ export default function ZetamacMini() {
           <p className="text-lg">Final Score: {score}</p>
           <button
             onClick={restart}
-            className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
+            className="bg-blue-600 text-white px-4 pt-3 pb-2 rounded hover:bg-blue-700 transition"
           >
             Play Again
           </button>
