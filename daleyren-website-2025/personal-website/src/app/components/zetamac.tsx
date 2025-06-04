@@ -70,28 +70,30 @@ export default function ZetamacMini() {
     <div className="bg-gray-100 text-black rounded-lg shadow-lg p-6 w-80 mx-auto text-center">
       <h2 className="text-xl font-bold mb-4">Zetamac Mini</h2>
 
-      {time > 0 ? (
-        <>
-          <div className="text-3xl font-mono mb-4 select-none">
-            {prob.l} {prob.op} {prob.r}
-          </div>
+{time > 0 ? (
+  <>
+    {/* math prompt keeps the Minecraft font */}
+    <div className="text-xl font-mono minecraft-font mb-4 select-none">
+      {prob.l} {prob.op} {prob.r}
+    </div>
 
-          <input
-            ref={inputRef}
-            value={answer}
-            onChange={e => setAnswer(e.target.value)}
-            className="w-24 h-16 text-center border-2 border-blue-400 rounded
-                       text-xl leading-none focus:outline-none focus:ring-2
-                       focus:ring-blue-500"
-            autoFocus
-          />
+    {/* input explicitly switches back to a normal sans-serif font */}
+    <input
+      ref={inputRef}
+      value={answer}
+      onChange={e => setAnswer(e.target.value)}
+      className="w-24 h-16 text-center border-2 border-blue-400 rounded
+                 text-xl leading-none focus:outline-none focus:ring-2
+                 focus:ring-blue-500 font-sans"
+      autoFocus
+    />
 
-          <p className="mt-4 text-gray-600 text-sm">Type the answer</p>
-          <div className="mt-4 text-sm space-y-1">
-            <p>Score: {score}</p>
-            <p>Time left: {time}s</p>
-          </div>
-        </>
+    <p className="mt-4 text-gray-600 text-sm">Type the answer</p>
+    <div className="mt-4 text-sm space-y-1">
+      <p>Score: {score}</p>
+      <p>Time left: {time}s</p>
+    </div>
+  </>
       ) : (
         <div className="space-y-4">
           <h3 className="text-xl font-semibold">Time&apos;s up!</h3>

@@ -34,7 +34,7 @@ export default function Home() {
           <div className="relative w-full h-full">
             {/* Rock, Paper, Scissors */}
             <div className="absolute top-8 left-25 bg-yellow-100 text-black p-4 rounded-lg shadow-lg w-75 h-75 -rotate-[1deg] z-10 flex flex-col items-center justify-center border border-black/10 shadow-black/40">
-              {/* <div className="absolute top-2 left-1/2 -translate-x-1/2 w-3 h-3 bg-red-700 border border-black z-20" /> */}
+              <div className="absolute top-2 left-1/2 -translate-x-1/2 w-3 h-3 bg-red-700 border border-black z-20" />
               <a
                 className="text-center text-lg font-medium text-wrap leading-snug"
               >
@@ -45,7 +45,7 @@ export default function Home() {
 
             {/* Minesweeper Bot */}
             <div className="absolute top-120 left-45 bg-yellow-100 text-black p-4 rounded-lg shadow-lg w-75 h-75 rotate-[4deg] z-10 flex flex-col items-center justify-center border border-black/10 shadow-black/40">
-              {/* <div className="absolute top-2 left-1/2 -translate-x-1/2 w-3 h-3 bg-red-700 border border-black z-20" /> */}
+              <div className="absolute top-2 left-1/2 -translate-x-1/2 w-3 h-3 bg-red-700 border border-black z-20" />
               <a
                 className="text-center text-lg font-medium text-wrap leading-snug"
               >
@@ -61,7 +61,7 @@ export default function Home() {
               rel="noopener noreferrer"
               className="absolute top-65 left-0 bg-yellow-100 text-black p-4 rounded-lg shadow-lg w-75 h-75 -rotate-[2deg] z-10 flex flex-col items-center justify-center border border-black/10 shadow-black/40 hover:font-bold"
             >
-              {/* <div className="absolute top-2 left-1/2 -translate-x-1/2 w-3 h-3 bg-red-700 border border-black z-20" /> */}
+              <div className="absolute top-2 left-1/2 -translate-x-1/2 w-3 h-3 bg-red-700 border border-black z-20" />
               <p
                 className="text-center text-lg text-wrap leading-snug hover:font-bold"
               >
